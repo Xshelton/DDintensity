@@ -8,16 +8,19 @@ __________________
 Constructed dataset:
 DDI_Major1_114958.csv
 
-* Step one:  building Embedding dataset
-First, make sure we have folders:0_drug_feature_pool
-and put unzipped drug features files into the folder 0_drug_feature_pool
+* Step one:  building Embedding dataset  
+First, make sure we have folders:0_drug_feature_pool  
+and put unzipped drug features files into the folder 0_drug_feature_pool  
 change 
-keys='DinoVitb16' in dataset_construction.py
-run the file 
-it will generate an embedding dataset for ML downstream tasks.
-Generally look like 
-0DDI_Major1_vDinoVitb16_dDinoVitb16_frs_0_rs0.csv
-'DinoVitb16' is the key to selecting the pre-trained deep learning models and an identifier for the following experiments.
+keys='DinoVitb16' in dataset_construction.py  
+run the file  
+it will generate an embedding dataset for ML downstream tasks.  
+Generally look like
+For pre-train deep learning of DinoVit, the files should looks like:  
+0DDI_Major1_vDinoVitb16_dDinoVitb16_frs_0_rs0.csv  
+For pre-trained deep learning of Biogpt, the files should looks like:  
+0DDI_Major1_vbioGPTesum_dbioGPTesum_frs_0_rs0.csv   
+'DinoVitb16' ,'bioGPTesum' are the key to selecting the pre-trained deep learning models and an identifier for the following experiments.  
 
 * Step 2: Building 5 folds embedding dataset
 in .\Embedding dataset\：  
