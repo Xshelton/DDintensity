@@ -8,7 +8,7 @@ __________________
 Constructed dataset:
 DDI_Major1_114958.csv
 
-Step one:  building Embedding dataset
+* Step one:  building Embedding dataset
 First, make sure we have folders:0_drug_feature_pool
 and put unzipped drug features files into the folder 0_drug_feature_pool
 change 
@@ -19,14 +19,14 @@ Generally look like
 0DDI_Major1_vDinoVitb16_dDinoVitb16_frs_0_rs0.csv
 'DinoVitb16' is the key to selecting the pre-trained deep learning models and an identifier for the following experiments.
 
-Step 2: Building 5 folds embedding dataset
-in .\Embedding dataset\：
-Copy-paste and rename the last number from 0-4:
-0DDI_Major1_v{}_d{}_frs_0_rs0.csv
-0DDI_Major1_v{}_d{}_frs_0_rs1.csv
-0DDI_Major1_v{}_d{}_frs_0_rs2.csv
-0DDI_Major1_v{}_d{}_frs_0_rs3.csv
-0DDI_Major1_v{}_d{}_frs_0_rs4.csv
+* Step 2: Building 5 folds embedding dataset
+in .\Embedding dataset\：  
+Copy-paste and rename the last number from 0-4:  
+0DDI_Major1_v{}_d{}_frs_0_rs0.csv  
+0DDI_Major1_v{}_d{}_frs_0_rs1.csv  
+0DDI_Major1_v{}_d{}_frs_0_rs2.csv  
+0DDI_Major1_v{}_d{}_frs_0_rs3.csv  
+0DDI_Major1_v{}_d{}_frs_0_rs4.csv  
 And run 
 Step2 embedding 2 filesfolds.py
 Please change:
@@ -37,7 +37,7 @@ We don't use any negative sampling. Thus, the imbalanced dataset can be the same
 All 5folds embedding files are in:
 0DDI_Major1_feature_pod\5folds
 
-Step3: run prediction files using:
+* Step3: run prediction files using:
 the put the pytorch_read_csv(Attention_LSTMmodel) biogpt-.py into 
 Embedding dataset\0DDI_Major1_feature_pod\
 run pytorch_read_csv(Attention_LSTMmodel) biogpt-.py
