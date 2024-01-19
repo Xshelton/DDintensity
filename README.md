@@ -1,5 +1,12 @@
 Github of Addressing Imbalanced Drug-Drug Interaction Risk Levels in Datasets using Pre-trained Deep Learning Model Embeddings (DDintensity):
 
+Deep-Learning information:  
+torch                   2.0.0+cu118
+torch-geometric         2.3.1
+torchaudio              2.0.1+cu118
+torchmetrics            0.11.4
+torchvision             0.15.1+cu118
+
 Steps of reproducing DDintensity:
 Drug Features files:
 Embeddings extracted from different pre-trained deep-learning models
@@ -50,7 +57,7 @@ Embedding dataset\0DDI_Major1_feature_pod\5folds
 Should name like this:    
 0DDI_Major1_v{key}_d{key}_frs_0_rs{rs for cutting file}_epoch{epoch}.csv  
 0DDI_Major1_v{key}_d{key}_frs_0_rs{rs for cutting file}_epoch{epoch}_test.csv  
-for e.g:  
+for e.g:  for biogpt model
 0DDI_Major1_vbioGPTesum_dbioGPTesum_frs_0_rs0_epoch1.csv  
 0DDI_Major1_vbioGPTesum_dbioGPTesum_frs_0_rs0_epoch1_test.csv    
 In total of five-fold cross validation, and five repeation, it will generate 50 files for each experiments.  
