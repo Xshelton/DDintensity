@@ -42,8 +42,9 @@ Step2 embedding 2 filesfolds.py
 Please change:  
 vkey='DinoVitb16'  
 dkey='DinoVitb16'  
-Into the pre-trained deep learning models name:  
-We don't use any negative sampling. Thus, the imbalanced dataset can be the same. We only need to change the random seeds to cut the dataset.  
+Into the pre-trained deep learning models name you chose:  
+We don't use any negative sampling.  
+Thus, the imbalanced dataset can be the same. We only need to change the random seeds to cut the dataset.  
 All 5folds embedding files are in:  
 0DDI_Major1_feature_pod\5folds  
 
