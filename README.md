@@ -1,5 +1,10 @@
 Github of Addressing Imbalanced Drug-Drug Interaction Risk Levels in Datasets using Pre-trained Deep Learning Model Embeddings (DDintensity):
 
+Features generation:
+The embedding generation rules (For NLP and CV embeddings) are the same as those in our previous work [1].
+The code can be downloaded at:
+http://deepseq2drug.cs.cityu.edu.hk/codes/
+
 Deep-Learning information:  
 torch                   2.0.0+cu118
 torch-geometric         2.3.1
@@ -66,3 +71,6 @@ In total of five-fold cross validation, and five repeation, it will generate 50 
 
 it will automatically generate scores of the DDI_test in the valid_results folder  
 and generate a scores file for five-fold cross-validation  
+
+Reference
+[1] W. Xie et al., ‘DeepSeq2Drug: An expandable ensemble end-to-end anti-viral drug repurposing benchmark framework by multi-modal embeddings and transfer learning’, Comput Biol Med, vol. 175, p. 108487, Jun. 2024, doi: 10.1016/j.compbiomed.2024.108487.
