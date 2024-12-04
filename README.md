@@ -2,17 +2,37 @@ Addressing Imbalanced Drug-Drug Interaction Risk Levels in  Datasets using Pre-t
 Currently Under Revision 
 
 
-Features generation:
-The embedding generation rules (For NLP and CV embeddings) are the same as those in our previous work [1].
-The code can be downloaded at:
+Embedding generation:  
+The embedding generation rules (For NLP-based and CV-based embeddings) are the same as those in our previous work [1].
+Those Codes/ Embeddings can be downloaded at:
 http://deepseq2drug.cs.cityu.edu.hk/codes/
 
 Deep-Learning information:  
-torch                   2.0.0+cu118
-torch-geometric         2.3.1
-torchaudio              2.0.1+cu118
-torchmetrics            0.11.4
-torchvision             0.15.1+cu118
+torch                   2.0.0+cu118  
+torch-geometric         2.3.1  
+torchaudio              2.0.1+cu118  
+torchmetrics            0.11.4  
+torchvision             0.15.1+cu118  
+or using requirements.txt.  
+
+Some concepts in this manuscript:  
+Original Datasets	Provide Positive Pairs/ Negative Pairs (Known Pairs)  
+Constructed Datasets	Provide positive/ negative pairs with random seeds. (for drugbank dataset only)  
+Embedding Datasets	Generate from constructed datasets via embedding files and provide training/ testing set for downstream machine-learning algorithms.  
+Independent Datasets	To verify the performance of the trained model  
+
+Dataset In this manuscript:  
+Original Datasets	  
+DDI2013 (Small, Imbalanced), Drug bank (Large, Balanced, Sample), DDinter (Large, Imbalanced),
+Independent Datasets  
+MecDDI
+
+ Details of each dataset  
+| Dataset|	Balanced	|Sampling	|DD-Type	|Positive |	Negative	|File_size|  
+|DDI2013|	No|	No|	DDI|	637	|3491|	0.12GB|  
+|DrugBank	|Yes	|Yes|	DDI	|191808	|191808|	11.57 GB|  
+|DDinter	|No	|No	|DD intensity (Major or not)	|24647	|90311|	3.43GB|  
+
 
 Steps of reproducing DDintensity:
 Drug Features files:
@@ -74,5 +94,5 @@ In total of five-fold cross validation, and five repeation, it will generate 50 
 it will automatically generate scores of the DDI_test in the valid_results folder  
 and generate a scores file for five-fold cross-validation  
 
-Reference
+Reference:  
 [1] W. Xie et al., ‘DeepSeq2Drug: An expandable ensemble end-to-end anti-viral drug repurposing benchmark framework by multi-modal embeddings and transfer learning’, Comput Biol Med, vol. 175, p. 108487, Jun. 2024, doi: 10.1016/j.compbiomed.2024.108487.
