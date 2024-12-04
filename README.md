@@ -1,4 +1,6 @@
-Github of Addressing Imbalanced Drug-Drug Interaction Risk Levels in Datasets using Pre-trained Deep Learning Model Embeddings (DDintensity):
+Addressing Imbalanced Drug-Drug Interaction Risk Levels in  Datasets using Pre-trained Deep Learning Model Embeddings (DDintensity)
+Currently Under Revision 
+
 
 Features generation:
 The embedding generation rules (For NLP and CV embeddings) are the same as those in our previous work [1].
