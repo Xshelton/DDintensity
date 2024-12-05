@@ -40,7 +40,7 @@ Embeddings extracted from different pre-trained deep-learning models
 The drug features extracted from different deep learning models can be found:
 __________________
 Constructed dataset:
-DDI_Major1_114958.csv  
+DDI_Major1_114958.csv   *DDI_major means, DDinter dataset, Major as 1, the rest set as o.  
 TrainDDI2013_4128.csv  
 
 ## * Step one:  building Embedding dataset  
@@ -118,15 +118,20 @@ For DrugBank epoch=200
 run pytorch_read_csv(Attention_LSTMmodel) biogpt-.py  
 if it works, you should see:
 <img width="362" alt="1733404292695" src="https://github.com/user-attachments/assets/06681c4b-b6aa-41a5-bd9f-e62d43aed84d">  
+if it is DDinter dataset, More training data shows:  
+![image](https://github.com/user-attachments/assets/217ab089-b5b8-4b8a-8ff9-4b53af8ea458)
 
 Then wait:
 it will automatically generate scores of the DDI_test in the valid_results folder  
 <img width="446" alt="1733404349023" src="https://github.com/user-attachments/assets/3748be62-a6f2-4a6e-811d-8b4ec8609bc8">
 
 After finishing:   
-## (to save time, only 200 epochs for DDI2013, AUC AND AUPR not satisfied, set epoch to 2000 would be better)  
-## for DDinter and Drugbank epoch 200 would be fine.
-<img width="236" alt="1733404830878" src="https://github.com/user-attachments/assets/669a7025-69ed-490f-af37-d1095ae1a408">  
+#### (to save time, only 200 epochs for DDI2013, AUC AND AUPR not satisfied, set epoch to 2000 would be better)  
+#### for DDinter and Drugbank epoch 200 would be fine.
+<img width="236" alt="1733404830878" src="https://github.com/user-attachments/assets/669a7025-69ed-490f-af37-d1095ae1a408">    
+
+#### for Biogpt, 200 epochs, repeat 1:
+
 
 and generate a scores file for five-fold cross-validation
 <img width="185" alt="1733404480190" src="https://github.com/user-attachments/assets/119f7679-fd9a-4f27-a0b2-fd1f41d6ae45">
