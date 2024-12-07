@@ -127,17 +127,22 @@ it will automatically generate scores of the DDI_test in the valid_results folde
 
 After finishing:   
 #### (to save time, only 200 epochs for DDI2013, AUC AND AUPR not satisfied, set epoch to 2000 would be better)  
-#### for DDinter and Drugbank epoch 200 would be fine.
-<img width="236" alt="1733404830878" src="https://github.com/user-attachments/assets/669a7025-69ed-490f-af37-d1095ae1a408">    
 
-#### for Biogpt, 200 epochs, repeat 1:
+<img width="236" alt="1733404830878" src="https://github.com/user-attachments/assets/669a7025-69ed-490f-af37-d1095ae1a408">   
+
+#### for DDinter and Drugbank epoch 200;  
+#### for Biogpt, 200 epochs, repeat 1,DDinter database:  '
+
+<img width="375" alt="1733544998043" src="https://github.com/user-attachments/assets/27ff4202-07e5-439d-8071-6b4a6d06014f">
 
 
+#### for Biogpt, 200 epochs, repeat 1,DDI2013:  
 and generate a scores file for five-fold cross-validation
 <img width="185" alt="1733404480190" src="https://github.com/user-attachments/assets/119f7679-fd9a-4f27-a0b2-fd1f41d6ae45">
 ![image](https://github.com/user-attachments/assets/fd2c8528-7195-4385-99cd-89b320d1c21a)
 
-
+#### for Biogpt, 200 epochs, repeat 1,DDinter database:  
+![image](https://github.com/user-attachments/assets/880524cb-a0df-485a-a810-c5b8698c74b1)
 
 
 Reference:  
