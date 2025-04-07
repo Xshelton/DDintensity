@@ -1,6 +1,8 @@
 # Addressing Imbalanced Drug-Drug Interaction Risk Levels in  Datasets using Pre-trained Deep Learning Model Embeddings (DDintensity)  
 Citation:  Currently Under Revision     
 
+Embedding information:
+http://deepseq2drug.cs.cityu.edu.hk/ddintensity-embeddings/
 
 Embedding generation:  
 The embedding generation rules (For NLP-based and CV-based embeddings) are the same as those in our previous work [1].
@@ -144,6 +146,11 @@ and generate a scores file for five-fold cross-validation
 #### for Biogpt, 200 epochs, repeat 1,DDinter database:  
 ![image](https://github.com/user-attachments/assets/880524cb-a0df-485a-a810-c5b8698c74b1)
 
+Supplementary material
+http://deepseq2drug.cs.cityu.edu.hk/ddintensity-supplementary-material/
+
+## The article is currently under revision, and we will update the corresponding citations when it's ready. We appreciate the valuable feedback from the anonymous reviewers on DDintensity.
 
 Reference:  
 [1] W. Xie et al., ‘DeepSeq2Drug: An expandable ensemble end-to-end anti-viral drug repurposing benchmark framework by multi-modal embeddings and transfer learning’, Comput Biol Med, vol. 175, p. 108487, Jun. 2024, doi: 10.1016/j.compbiomed.2024.108487.
+
